@@ -1,16 +1,15 @@
-# PraanLink
+# Lifejod
 
-> **🏆 Winner — Healthcare Hackathon @ IIT Bombay (organized by Loop Health)
-Empathy meets intelligence — your proactive health steward walking with you every step of the way.**
+> 
 
-PraanLink reimagines healthcare as a continuous conversation, blending empathy with intelligence. Its goal is to detect health issues before they become critical, making healthcare proactive instead of reactive.
+Lifejod reimagines healthcare as a continuous conversation, blending empathy with intelligence. Its goal is to detect health issues before they become critical, making healthcare proactive instead of reactive.
 
 
 ---
 
 ## 🧠 Overview
 
-PraanLink is a continuous-care companion that proactively manages your health journey through:
+Lifejod is a continuous-care companion that proactively manages your health journey through:
 
 - **Continuous Care**: Regular, conversational check-ins that learn your patterns and detect anomalies early
 - **Contextual Intelligence**: Analyzes your health history, reports, and conversations to spot trends before they become problems
@@ -34,7 +33,7 @@ People delay seeking medical help due to:
 
 ## 💡 The Solution
 
-PraanLink addresses these challenges through:
+Lifejod addresses these challenges through:
 
 1. **Routine Human-like Conversations**
    - "Hey Ananya, your energy's been low this week. Shall we check your iron levels?"
@@ -156,7 +155,7 @@ The report generation process follows a **7-step pipeline**:
 
 ## 🌍 Alignment with Healthcare Vision
 
-| Challenge | PraanLink Solution |
+| Challenge | Lifejod Solution |
 |-----------|-------------------|
 | Lack of accessible care | Multilingual, low-bandwidth, continuous monitoring |
 | Scattered health data | Multi-agent insight engine converting PDFs into readable insights |
@@ -182,12 +181,12 @@ The report generation process follows a **7-step pipeline**:
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd PraanLink
+   cd Lifejod
    ```
 
 2. **Backend Setup**
    ```bash
-   cd PraanLink/backend
+   cd Lifejod/backend
    
    # Create virtual environment
    python -m venv venv
@@ -206,7 +205,7 @@ The report generation process follows a **7-step pipeline**:
 
 3. **Frontend Setup**
    ```bash
-   cd PraanLink/frontend
+   cd Lifejod/frontend
    
    # Install dependencies
    npm install
@@ -219,7 +218,7 @@ The report generation process follows a **7-step pipeline**:
 
 4. **AI Pipeline Setup**
    ```bash
-   cd PraanLink/ai-pipeline
+   cd Lifejod/ai-pipeline
    
    # Activate the ADK virtual environment
    source adk-venv/bin/activate  # On Windows: adk-venv\Scripts\activate
@@ -232,7 +231,7 @@ The report generation process follows a **7-step pipeline**:
 
 1. **Start the Backend** (Terminal 1)
    ```bash
-   cd PraanLink/backend
+   cd Lifejod/backend
    python main.py
    ```
    Backend runs on `http://localhost:8000`
@@ -241,7 +240,7 @@ The report generation process follows a **7-step pipeline**:
 
 2. **Start the Frontend** (Terminal 2)
    ```bash
-   cd PraanLink/frontend
+   cd Lifejod/frontend
    npm run dev
    # or
    bun dev
@@ -250,7 +249,7 @@ The report generation process follows a **7-step pipeline**:
 
 3. **Start the AI Pipeline** (Terminal 3)
    ```bash
-   cd PraanLink/ai-pipeline
+   cd Lifejod/ai-pipeline
    source adk-venv/bin/activate
    adk api_server --allow_origins=http://localhost:8000 --host=0.0.0.0 --port=5010
    ```
@@ -260,7 +259,7 @@ The report generation process follows a **7-step pipeline**:
 
 #### Backend (.env)
 ```env
-DATABASE_URL=postgresql://user:password@localhost:5432/praanlink
+DATABASE_URL=postgresql://user:password@localhost:5432/Lifejod
 GOOGLE_API_KEY=your_google_api_key
 ```
 
@@ -275,7 +274,7 @@ VITE_GEMINI_API_KEY=your_gemini_api_key
 ## 📁 Project Structure
 
 ```
-PraanLink/
+Lifejod/
 ├── frontend/                 # React + TypeScript frontend
 │   ├── src/
 │   │   ├── components/      # Reusable UI components
@@ -416,4 +415,5 @@ PraanLink/
 
 ---
 
-**PraanLink** — Bringing continuous preventive healthcare to everyone, not just those with access to expensive systems.
+**Lifejod** — Bringing continuous preventive healthcare to everyone, not just those with access to expensive systems.
+
